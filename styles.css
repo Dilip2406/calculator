@@ -1,5 +1,5 @@
 body{
-    background-color: #0B0C10;
+    background-color: #F4EEE0;
     color:white;
     
 }
@@ -8,13 +8,16 @@ body{
 
 .container{
     display: flex;
-    border: 2px solid blue;
-    height:500px;
+    border: 5px solid #393646;
+    height:450px;
     width :350px;
-    margin:200px auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:75px;
     flex-wrap: wrap;
-    padding: 8px;
     flex-direction: column;
+
+    box-shadow: 0 0 1rem grey;
 
 }
 
@@ -24,18 +27,33 @@ body{
     
 
 }
-.output{
-    border:2px solid yellow;
-    text-align: center;
-    flex:3;
-    background-color: white;;
-    font-size: 1.5rem;
-   
+.output1,.output2{
+    text-align: center;   
+    background-color: white;
+    font-weight: 700;
+    color:black;
+    overflow: hidden;
     
+   
+}
+
+.output1{
+    flex:1 1 auto;
+    max-width: 350px;
+    border-right: 2px;
+    border-left:2px;
+    border-color: #393646;
+    font-size: 1.75rem;
+}
+
+.output2{
+    flex:1.5;
+    max-width: 350px;
+    font-size: 2.5rem;
 }
 
 .row{
-    border: 2px solid yellow;
+    border: 2px solid #393646;
     padding:0;
     margin:0;
     display: flex;
@@ -48,6 +66,14 @@ body{
 }
 
 
+.title{
+    text-align: center;
+    margin: 75px auto;
+    font-size:30px;
+    color:#393646;
+}
+
+
 
 /* */    
 
@@ -57,10 +83,11 @@ button {
     padding: 1rem 2rem;
     margin: 0;
     text-decoration: none;
-    background: #0069ed;
-    color: #ffffff;
+    background: #F4EEE0;
+    color: #393646;
     font-family: sans-serif;
     font-size: 1rem;
+    font-weight:1000;
     cursor: pointer;
     text-align: center;
     transition: background 250ms ease-in-out, transform 150ms ease;
@@ -68,15 +95,16 @@ button {
     -moz-appearance: none;
 
     flex:1 1;
-    flex-basis: calc(334/4 ) px;
-    border:1px solid yellow;
+    flex-basis: calc(350/4 ) px;
+    border:2px solid #393646;
     box-sizing: border-box;
+    border-radius: 5px;
 
 }
 
 button:hover,
 button:focus {
-    background: #0053ba;
+    background: #6D5D6E;
 }
 
 button:focus {

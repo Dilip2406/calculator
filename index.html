@@ -10,30 +10,34 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+    <div class="title"><h2> Calculator</h2></div>
+
+
   <div class="container">
-    <div class="output"></div>
+    <div class="output1" id="output1"> </div>
+    <div class="output2" id="output2"></div>
     <div class="container2">
-        <div class="row">
+        <div class="row" style="border-top:40px;">
         <button>%</button>
         <button>&#8730; &#160;</button>
         <button> <i class="material-icons" style="font-size:16px;"> &#xe14a;</i></button>
-        <button>C</button>
+        <button onclick="clearout()">C</button>
         
         </div>
-        <div class="row">
-            <button>9</button> <button>8</button><button>7</button><button>x</button>
+        <div class="row ">
+            <button id="9">9</button> <button id="8">8</button><button id="7">7</button><button id="*">x</button>
         </div>
 
         <div class="row">
-            <button>6</button> <button>5</button><button>4</button><button>-</button>
+            <button id="6">6</button> <button id="5">5</button><button id="4">4</button><button id="-">-</button>
         </div>
 
         <div class="row">
-            <button>3</button> <button>2&#160;</button><button>1</button><button>+</button>
+            <button id="3">3</button> <button id="2">2&#160;</button><button id="1">1</button><button id="+">+</button>
         </div>
 
         <div class="row">
-            <button>.&#160;</button> <button>0&#160;</button><button> &divide;</button><button>=</button>
+            <button id=".">.&#160;</button> <button id="0">0&#160;</button><button id="/"> &divide;</button><button id="=">=</button>
         </div>
 
     </div>
