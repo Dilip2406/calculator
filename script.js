@@ -65,7 +65,7 @@ btn.forEach(item => item.addEventListener('click',function(e)
         output2.innerHTML+='&times;';
         return;
     }
-    output2.innerHTML =`${this.id}`;
+    output2.innerHTML +=`${this.id}`;
     
 }
 ));
