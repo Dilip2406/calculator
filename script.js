@@ -6,26 +6,56 @@ let num2;
 let count=0;
 
 
+
+function checkNumber(x) {
+
+    // check if the passed value is a number
+    if(typeof x == 'number' && !isNaN(x)){
+    
+        // check if it is integer
+        if (Number.isInteger(x)) {
+            return x;
+        }
+        else {
+
+            return x.toPrecision(4)
+        }
+    
+    } 
+}
+
+
 function add(a,b){
-    return (a+b).toPrecision(5);
+    let answer=a+b;
+    answer=checkNumber(answer);
+    return answer;
 }
 
 function subtract(a,b)
-{
-    return (a-b).toPrecision(5);
+{   
+    let answer=a-b;
+    answer=checkNumber(answer);
+    return answer;
 }
 
 function multiply(a,b)
 {
-    return (a*b).toPrecision(5);
+    let answer=a*b;
+    answer=checkNumber(answer);
+    return answer;
+
 }
 
 function divide(a,b)
-{   if(b==0)
+{ 
+    if(b==0)
     {
         return 'GOTCHA  ERROR';
     }
-    return (a/b).toPrecision(5);
+    let answer=a/b;
+    answer=checkNumber(answer);
+    return answer;
+   
 }
 
 function operate(a,b,c)
